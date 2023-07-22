@@ -46,8 +46,9 @@ void loop() {
 ```
 ### **Code Simulation**
 
+https://github.com/Rawnaa-19/Arduino-UNO-Push-Button-and-LED-Matrix/assets/106926557/9f3a1982-98de-4fa6-a74d-e6790e8ff849
 
-https://github.com/Rawnaa-19/Arduino-UNO-Push-Button-and-LED-Matrix/assets/106926557/94931c3b-c14a-4f84-8c85-907ca431b291
+
 
 
 ## 2. Arduino UNO with a 25 LEDs as a LED Matrix
@@ -55,10 +56,56 @@ https://github.com/Rawnaa-19/Arduino-UNO-Push-Button-and-LED-Matrix/assets/10692
 ### **Circuit Components :** 
   **1.**  Arduino UNO\
   **2.**  25 LEDs\
-  **3.**  220 ohm resistor\
-  **4.**  220 ohm resistor ( for the LED )\
-  **5.**  Breadboard\
+  **3.**  5 of 1k ohm resistors\
+  
+### **The Circuit** 
+  The goal is to divide all 25 LEDs into a 5X5 matrix. As such, the cathode leg of each 5 LEDs will represent the rows, and the anode leg will represent the columns. Each row is connected to an Arduino pin, while each column is connected to a resistor connected to an Arduino pin. 
+<kbd>![image](https://github.com/Rawnaa-19/Arduino-UNO-Push-Button-and-LED-Matrix/assets/106926557/6a092dfb-03ef-4f39-bb7a-2b056b1df72c)</kbd>
 
+### **Arduino Uno code** " Attached under the name "LED-MATRIX-CODE" in this repository." 
+  By running the code below, some LEDs will light up to create a smiley face.\
+```
+//define column and row pin number
+int rows[]={13,12,11,10,9};
+int columns[]={6,5,4,3,2};
+int delayTime = 300;
+int matrix[5][5] = {{1,1,1,1,1},
+		       {1,0,1,0,1},
+		       {1,0,1,0,1},
+		       {0,1,1,1,0},
+		       {1,0,0,0,1}};
+// initialize pin mode
+void setup() {
+for (int thisPin = 0; thisPin < 5; thisPin++) {
+    // initialize the output pins:
+    pinMode(columns[thisPin], OUTPUT);
+    pinMode(rows[thisPin], OUTPUT);
+  }
+
+}
+// define loop
+void loop(){
+  for (int c=0; c<5; c++){
+    digitalWrite(columns[c], HIGH);
+    for (int r = 0; r < 5; r++){
+      digitalWrite(rows[r], 255*matrix[r][c]);
+    delay(1);
+    }
+    for (int r = 0; r < 5; r++){
+      digitalWrite(rows[r], HIGH);
+   delay(1);
+    }
+  
+    digitalWrite(columns[c], LOW);
+  }
+}
+```
+### **Code Simulation**
+
+https://github.com/Rawnaa-19/Arduino-UNO-Push-Button-and-LED-Matrix/assets/106926557/199c9d72-3285-4eca-bfc2-9b624babbefa
+
+The resistor values were adjusted to get brighter LEDs (not recommended with actual hardware settings because LEDs could burn).
+https://github.com/Rawnaa-19/Arduino-UNO-Push-Button-and-LED-Matrix/assets/106926557/455655ab-55f9-4c83-8035-708e90232b98
 
 
 
