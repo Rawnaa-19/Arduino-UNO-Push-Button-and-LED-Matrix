@@ -2,18 +2,18 @@
 This is the first task for the Electronics and Power Department. It consists of two assignments: the first involves building a circuit with an Arduino UNO and a push button, while the second involves creating my own LED matrix (DIY version ).
 ## 1. Arduino UNO with a Push Button to Control a LED
 
-** Circuit Components :  **
-** 1- ** Arduino UNO
-** 2- ** Push Button
-** 3- ** LED
-** 4- ** 220 ohm resistor ( for the LED )
-** 5- **  Breadboard
+**Circuit Components :**
+**1-**  Arduino UNO
+**2-**  Push Button
+**3-**  LED
+**4-**  220 ohm resistor ( for the LED )
+**5-**  Breadboard
 Usually we will need a resistor for the push button. However, since the Arduino UNO has a pull-up resistor built into it, we can enable it in code. (Instructables, 2017)
-** The Circuit **
+**The Circuit**
 The digital pin 2 is connected to the button, and digital pin 7 is connected with the anode leg of the LED.
 <kbd>![image](https://github.com/Rawnaa-19/Arduino-UNO-Push-Button-and-LED-Matrix/assets/106926557/de2084d7-a646-422b-bd7e-2d96ee28ac43)</kbd>
 
-** Arduino Uno code ** " Attached under the name "LED-BUTTON-CODE" in this repository." 
+**Arduino Uno code** " Attached under the name "LED-BUTTON-CODE" in this repository." 
 This code will make the LED light up for 5 seconds only when the button is pushed, otherwise the LED will be turned off.
 ```
 const int buttonPin = 2;  // the number of the pushbutton pin
