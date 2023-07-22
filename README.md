@@ -14,7 +14,7 @@ Usually we need a resistor for the push button. However, since the Arduino UNO h
   The digital pin 2 is connected to the button, and digital pin 7 is connected with the anode leg of the LED.\
 <kbd>![image](https://github.com/Rawnaa-19/Arduino-UNO-Push-Button-and-LED-Matrix/assets/106926557/de2084d7-a646-422b-bd7e-2d96ee28ac43)</kbd>
 
-### **Arduino Uno code** " Attached under the name "LED-BUTTON-CODE" in this repository." 
+### **Arduino Uno code** " Attached under the name "ARDUINO-LED-BUTTON-CODE" in this repository." 
   This code will make the LED light up for 5 seconds only when the button is pushed, otherwise the LED will be turned off.\
 ```
 const int buttonPin = 2;  // the number of the pushbutton pin
@@ -97,7 +97,7 @@ https://github.com/Rawnaa-19/Arduino-UNO-Push-Button-and-LED-Matrix/assets/10692
   The goal is to divide all 25 LEDs into a 5X5 matrix. As such, the cathode leg of each 5 LEDs will represent the rows, and the anode leg will represent the columns. Each row is connected to an Arduino pin, while each column is connected to a resistor connected to an Arduino pin. 
 <kbd>![image](https://github.com/Rawnaa-19/Arduino-UNO-Push-Button-and-LED-Matrix/assets/106926557/6a092dfb-03ef-4f39-bb7a-2b056b1df72c)</kbd>
 
-### **Arduino Uno code** " Attached under the name "LED-MATRIX-CODE" in this repository." 
+### **Arduino Uno code** " Attached under the name "ARDUINO-LED-MATRIX-CODE" in this repository." 
   By running the code below, some LEDs will light up to create a smiley face.\
 ```
 //define column and row pin number
