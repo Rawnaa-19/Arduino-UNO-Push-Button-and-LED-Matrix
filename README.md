@@ -45,7 +45,7 @@ void loop() {
 }
 ```
 ### **Code Simulation**
-https://clipchamp.com/watch/KPk27YJRA1s
+(https://clipchamp.com/watch/KPk27YJRA1s)
 ## 2. Arduino UNO with a 25 LEDs as a LED Matrix
 
 ### **Circuit Components :** 
