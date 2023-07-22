@@ -9,12 +9,12 @@ This is the first task for the Electronics and Power Department. It consists of 
 **4.**  220 ohm resistor ( for the LED )\
 **5.**  Breadboard\
 Usually we will need a resistor for the push button. However, since the Arduino UNO has a pull-up resistor built into it, we can enable it in code. [(Instructables, 2017)](https://www.instructables.com/Arduino-Button-with-no-resistor/)\
-**The Circuit**
-The digital pin 2 is connected to the button, and digital pin 7 is connected with the anode leg of the LED.
+\ **The Circuit**\
+The digital pin 2 is connected to the button, and digital pin 7 is connected with the anode leg of the LED.\
 <kbd>![image](https://github.com/Rawnaa-19/Arduino-UNO-Push-Button-and-LED-Matrix/assets/106926557/de2084d7-a646-422b-bd7e-2d96ee28ac43)</kbd>
 
-**Arduino Uno code** " Attached under the name "LED-BUTTON-CODE" in this repository." 
-This code will make the LED light up for 5 seconds only when the button is pushed, otherwise the LED will be turned off.
+**Arduino Uno code** " Attached under the name "LED-BUTTON-CODE" in this repository." \
+This code will make the LED light up for 5 seconds only when the button is pushed, otherwise the LED will be turned off.\
 ```
 const int buttonPin = 2;  // the number of the pushbutton pin
 const int ledPin = 7;    // the number of the LED pin
