@@ -142,7 +142,6 @@ https://github.com/Rawnaa-19/Arduino-UNO-Push-Button-and-LED-Matrix/assets/10692
 The resistor values were adjusted to get brighter LEDs (not recommended with actual hardware settings because LEDs could burn).
 
 
-
 https://github.com/Rawnaa-19/Arduino-UNO-Push-Button-and-LED-Matrix/assets/106926557/cf8b5d0e-7cda-47b5-a37e-8ff575a9dbf6
 
 
@@ -187,7 +186,10 @@ void loop(){
 ### **Adujsted Code Simulation**
 
 
-https://github.com/Rawnaa-19/Arduino-UNO-Push-Button-and-LED-Matrix/assets/106926557/1b4426b7-4b27-4492-96cd-7f2dfc8da2c2
+
+https://github.com/Rawnaa-19/Arduino-UNO-Push-Button-and-LED-Matrix/assets/106926557/6fdd5015-dee5-4337-a7c4-9471c42cda42
+
+
 
 
 
